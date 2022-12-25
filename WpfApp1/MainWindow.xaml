@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        x:Name="windows"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Menu Background="White">
+            <MenuItem Header="_Окно" MouseLeave="WindowFocus" MouseEnter="WindowEnter">
+                <MenuItem Header="_Изменить цвет">
+                    <MenuItem Header="_White" Click="White"/>
+                    <MenuItem Header="_Blue" Click="Blue" />
+                    <MenuItem Header="_Green" Click="Green" />
+                    <MenuItem Header="_Red" Click="Red" />
+                    <MenuItem Header="_Yellow" Click="Yellow" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_О программе" Click="Information" MouseEnter="InformationEnter" MouseLeave="WindowFocus"/>
+            <MenuItem Header="Закрыть" Click="MenuItem_Click" MouseEnter="ExitEnter" MouseLeave="WindowFocus"/>
+        </Menu>
+        <ToolBar Canvas.Top="20" Width="800">
+            <ComboBox MouseLeave="WindowFocus" MouseEnter="WindowEnter"
+                      SelectedIndex="0" Name="combo">
+                <Image Source="/Menu.png" Width="50" />
+                <ComboBoxItem Content="White" Selected="White"/>
+                <ComboBoxItem Content="Blue" Selected="Blue"/>
+                <ComboBoxItem Content="Green" Selected="Green"/>
+                <ComboBoxItem Content="Red" Selected="Red"/>
+                <ComboBoxItem Content="Yellow" Selected="Yellow"/>
+            </ComboBox>
+            <Separator/>
+            <Button Margin="10, 0, 0, 0" Click="Information" MouseEnter="InformationEnter" MouseLeave="WindowFocus">
+                <Image Source="/information.png" Width="50"/>
+            </Button>
+            <Separator/>
+            <Button Margin="10, 0, 0, 0" Click="MenuItem_Click" MouseEnter="ExitEnter" MouseLeave="WindowFocus">
+                <Image Source="/Exit.png" Width="50"/>
+            </Button>
+        </ToolBar>
+        <StatusBar Canvas.Top="390" Width="800">
+            <TextBlock Text="" x:Name="Focus"/>
+        </StatusBar>
+    </Canvas>
+</Window>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="Paint_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="900" Width="1500">
+
+    <Window.Resources>
+        <x:Array x:Key="MyEditingModes" x:Type="{x:Type InkCanvasEditingMode}">
+            <x:Static Member="InkCanvasEditingMode.Ink"/>
+            <x:Static Member="InkCanvasEditingMode.Select"/>
+            <x:Static Member="InkCanvasEditingMode.EraseByPoint"/>
+            <x:Static Member="InkCanvasEditingMode.EraseByStroke"/>
+        </x:Array>
+        <x:Array x:Key="MyDrawingAttributes" x:Type="{x:Type DrawingAttributes}" >
+            <DrawingAttributes Color="Black"/>
+            <DrawingAttributes Color="Pink"/>
+            <DrawingAttributes Color="Purple"/>
+            <DrawingAttributes Color="Yellow"/>
+            <DrawingAttributes Color="Red"/>
+            <DrawingAttributes Color="LightGreen"/>
+            <DrawingAttributes Color="Blue"/>
+            <DrawingAttributes Color="LightCoral"/>
+            <DrawingAttributes Color="LightBlue"/>
+        </x:Array>
+    </Window.Resources>
+    <StackPanel x:Name="DrawingAtr">
+        <InkCanvas Width="1500" Height="500" Name="DrawwingAttr"
+            EditingMode="{Binding ElementName=lbEditingModes, Path=SelectedValue}">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="{Binding ElementName=lbColors, Path=SelectedValue}" Height="10" Width="10"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+        <ListBox x:Name="lbEditingModes" ItemsSource="{StaticResource MyEditingModes}" />
+        <ListBox x:Name="lbColors" ItemsSource="{StaticResource MyDrawingAttributes}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Background="{Binding Path=SelectedValue}" Text="{Binding Path=Color}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Slider Name="slider" Margin="0, 10, 0, 0" Height="50" Width="500" Minimum="1" Maximum="100" Value="20" ValueChanged="Slider"/>
+    </StackPanel>
+</Window>

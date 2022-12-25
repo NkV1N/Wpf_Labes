@@ -1,0 +1,39 @@
+﻿<Window x:Class="Paint_Wpf_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Paint_Wpf_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label>Цвет кисти</Label>
+            <ComboBox Margin="0, 10, 20, 0" Width="100">
+                <ComboBoxItem Background="Black" Content="Черный" Selected="Black"/>
+                <ComboBoxItem Background="Yellow" Content="Желтый" Selected="Yellow" />
+                <ComboBoxItem Background="Green" Content="Зеленый" Selected="Green" />
+                <ComboBoxItem Background="Blue" Content="Синий" Selected="Blue" />
+                <ComboBoxItem Background="Red" Content="Красный" Selected="Red" />
+                <ComboBoxItem Background="White" Content="Белый" Selected="White" />
+                <ComboBoxItem Background="Purple" Content="Фиолетовый" Selected="Purple" />
+            </ComboBox>
+            <Label Margin="0, 10, 0, 0">Размер кисти</Label>
+            <Slider Background="Pink" Name="slider" Margin="0, 10, 20, 0" Height="25" Width="100" Minimum="1" Maximum="100" Value="20" ValueChanged="Slider"/>
+            <Label Name="label"/>
+            <Label Margin="0, 10, 0, 0">Выбор действия</Label>
+            <RadioButton Background="Purple" GroupName="Radio" Checked="Pen">Рисовать</RadioButton>
+            <RadioButton Background="Purple" GroupName="Radio" Checked="Update">Редактирование</RadioButton>
+            <RadioButton Background="Purple" GroupName="Radio" Checked="RadioButton_Checked">Удаление</RadioButton>
+        </StackPanel>
+        <InkCanvas Grid.Column="1" x:Name="DrawingAttr">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Green" Height="20" Width="20"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1.csproj", "{F2E0E032-AA44-4EC9-84F4-E1C08181DDD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paint_Wpf", "..\Paint_Wpf\Paint_Wpf.csproj", "{B40455EA-A260-4ED8-98EB-5F0927E3D7DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Privyazka", "..\Privyazka\Privyazka.csproj", "{074F9F80-3EEE-4558-A6AF-CFDE5DA2AED9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Style_Wpf", "..\Style_Wpf\Style_Wpf.csproj", "{84D91EA8-6176-4AA7-B4C9-B87A43E0EFA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paint_Wpf_2", "..\Paint_Wpf_2\Paint_Wpf_2.csproj", "{B5B51AB3-D91D-482A-BE87-4A11750D6DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTrigger", "..\MultiTrigger\MultiTrigger.csproj", "{4BA17F23-E2BB-4920-8EBC-A5066AF48A53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2E0E032-AA44-4EC9-84F4-E1C08181DDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E0E032-AA44-4EC9-84F4-E1C08181DDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E0E032-AA44-4EC9-84F4-E1C08181DDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E0E032-AA44-4EC9-84F4-E1C08181DDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40455EA-A260-4ED8-98EB-5F0927E3D7DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40455EA-A260-4ED8-98EB-5F0927E3D7DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40455EA-A260-4ED8-98EB-5F0927E3D7DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40455EA-A260-4ED8-98EB-5F0927E3D7DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074F9F80-3EEE-4558-A6AF-CFDE5DA2AED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074F9F80-3EEE-4558-A6AF-CFDE5DA2AED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074F9F80-3EEE-4558-A6AF-CFDE5DA2AED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074F9F80-3EEE-4558-A6AF-CFDE5DA2AED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D91EA8-6176-4AA7-B4C9-B87A43E0EFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D91EA8-6176-4AA7-B4C9-B87A43E0EFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D91EA8-6176-4AA7-B4C9-B87A43E0EFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D91EA8-6176-4AA7-B4C9-B87A43E0EFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B51AB3-D91D-482A-BE87-4A11750D6DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B51AB3-D91D-482A-BE87-4A11750D6DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B51AB3-D91D-482A-BE87-4A11750D6DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B51AB3-D91D-482A-BE87-4A11750D6DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA17F23-E2BB-4920-8EBC-A5066AF48A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA17F23-E2BB-4920-8EBC-A5066AF48A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA17F23-E2BB-4920-8EBC-A5066AF48A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA17F23-E2BB-4920-8EBC-A5066AF48A53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFAED16D-4CF5-4B40-BA74-F70DD9E362DA}
+	EndGlobalSection
+EndGlobal

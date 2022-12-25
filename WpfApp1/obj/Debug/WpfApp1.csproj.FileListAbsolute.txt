@@ -1,0 +1,16 @@
+D:\ПМ0.2\6 Задание\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\ПМ0.2\6 Задание\WpfApp1\bin\Debug\WpfApp1.exe
+D:\ПМ0.2\6 Задание\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.csproj.AssemblyReference.cache
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.csproj.SuggestedBindingRedirects.cache
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\App.g.cs
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\MainWindow.baml
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.exe
+D:\ПМ0.2\6 Задание\WpfApp1\obj\Debug\WpfApp1.pdb
